@@ -1,6 +1,4 @@
-language: nix
+dist: bionic
 
 script: |
-  echo hi
-  # nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
   cat /proc/cpuinfo
