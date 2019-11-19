@@ -1,4 +1,2 @@
-dist: bionic
-
 script: |
   cat /proc/cpuinfo
