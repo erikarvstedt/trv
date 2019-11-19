@@ -1,5 +1,6 @@
 dist: bionic
 language: nix
+sudo: true
 
 script: |
   # nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
