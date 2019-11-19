@@ -7,7 +7,7 @@ sudo: true
   . /home/travis/.nix-profile/etc/profile.d/nix.sh
 
 script: |
-  echo 'build 1'
+  echo 'build 0'
   whoami
   (echo ----kvm; lsmod | grep kvm; echo ---done)
   cat /proc/cpuinfo
