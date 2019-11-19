@@ -1,11 +1,13 @@
 dist: bionic
+language: minimal
 # language: nix
 sudo: true
 
 script: |
-  echo 'build 0'
+  echo 'build 2'
   whoami
   ls -al /dev/kvm
+  sudo chmod go+rw /dev/kvm
   (echo ----kvm; lsmod | grep kvm; echo ---done)
   cat /proc/cpuinfo
   echo ----nix
