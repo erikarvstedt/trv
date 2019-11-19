@@ -2,10 +2,6 @@ dist: bionic
 # language: nix
 sudo: true
 
-# install: |
-  (for i in {1..5}; do bash <(curl https://nixos.org/nix/install) && exit 0; done; exit 1)
-  . /home/travis/.nix-profile/etc/profile.d/nix.sh
-
 script: |
   echo 'build 0'
   whoami
