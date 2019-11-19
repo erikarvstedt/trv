@@ -5,6 +5,7 @@ sudo: true
 script: |
   echo 'build 0'
   whoami
+  ls -al /dev/kvm
   (echo ----kvm; lsmod | grep kvm; echo ---done)
   cat /proc/cpuinfo
   echo ----nix
