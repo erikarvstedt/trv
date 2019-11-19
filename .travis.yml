@@ -2,4 +2,5 @@ language: nix
 
 script: |
   echo hi
-  nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
+  # nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
+  /proc/cpuinfo
