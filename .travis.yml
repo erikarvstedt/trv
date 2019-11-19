@@ -2,5 +2,5 @@ dist: bionic
 language: nix
 
 script: |
-  nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
+  # nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
   cat /proc/cpuinfo
