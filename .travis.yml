@@ -4,4 +4,5 @@ script: |
   echo hi
   env
   uname -a
-
+  ip a
+  iptables-save
