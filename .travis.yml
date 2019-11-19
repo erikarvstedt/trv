@@ -2,10 +2,11 @@ dist: bionic
 # language: nix
 sudo: true
 
-install: |
-  (for i in {1..5}; do bash <(curl https://nixos.org/nix/install) && exit 0; done; exit 1)
-  . /home/travis/.nix-profile/etc/profile.d/nix.sh
+# install: |
+#   (for i in {1..5}; do bash <(curl https://nixos.org/nix/install) && exit 0; done; exit 1)
+#   . /home/travis/.nix-profile/etc/profile.d/nix.sh
 
 script: |
+  lsmod | grep kvm
   cat /proc/cpuinfo
-  nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
+  # nix-build --no-out-link '<nixpkgs/nixos/tests/haka.nix>'
