@@ -4,10 +4,11 @@ language: minimal
 sudo: true
 
 script: |
-  echo 'build 2'
+  echo 'build 3'
   whoami
   ls -al /dev/kvm
   sudo chmod go+rw /dev/kvm
+  ls -al /dev/kvm
   (echo ----kvm; lsmod | grep kvm; echo ---done)
   cat /proc/cpuinfo
   echo ----nix
